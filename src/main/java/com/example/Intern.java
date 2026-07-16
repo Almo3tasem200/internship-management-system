@@ -3,8 +3,8 @@ package com.example;
 import java.time.LocalDate;
 
 public class Intern {
-    private int internId;
-    private String internName;
+    private final int internId;
+    private final String internName;
     private String internEmail;
     private LocalDate startDate;
     private int trackId;
@@ -22,11 +22,6 @@ public class Intern {
     public Intern(int internId, String internName) {
         this.internId = internId;
         this.internName = internName;
-    }
-    public Intern(int internId, String internName, int trackId) {
-        this.internId = internId;
-        this.internName = internName;
-        this.trackId = trackId;
     }
 
 
