@@ -7,7 +7,7 @@ import java.util.*;
 
 public class InternDao {
 
-    private Connection conn;
+    private final Connection conn;
 
     public InternDao(Connection conn) {
         this.conn = conn;

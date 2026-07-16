@@ -6,10 +6,7 @@ import java.util.*;
 
 public class Main {
 
-    private Scanner scanner = new Scanner(System.in);
-    private InternDao internDao;
-    private ProjectDao projectDao;
-    private SubmissionDao submissionDao;
+    private final Scanner scanner = new Scanner(System.in);
 
     void main(String[] args) throws SQLException {
         // Exercise 1: Test the Database Connection
@@ -22,9 +19,9 @@ public class Main {
 
         if (conn != null) {
             // Initialize DAOs
-            internDao = new InternDao(conn);
-            projectDao = new ProjectDao(conn);
-            submissionDao = new SubmissionDao(conn);
+            InternDao internDao = new InternDao(conn);
+            ProjectDao projectDao = new ProjectDao(conn);
+            SubmissionDao submissionDao = new SubmissionDao(conn);
 
             // Exercise 2: Read All Interns
             System.out.print("""
