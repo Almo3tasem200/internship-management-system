@@ -18,28 +18,39 @@ public class Intern {
         this.trackId = trackId;
         this.mentorId = mentorId;
     }
+
     public Intern(int internId, String internName) {
         this.internId = internId;
         this.internName = internName;
+    }
+    public Intern(int internId, String internName, int trackId) {
+        this.internId = internId;
+        this.internName = internName;
+        this.trackId = trackId;
     }
 
 
     public int getInternId() {
         return internId;
     }
-    public String getInternName(){
+
+    public String getInternName() {
         return internName;
     }
-    public String getInternEmail(){
+
+    public String getInternEmail() {
         return internEmail;
     }
-    public LocalDate getStartDate(){
+
+    public LocalDate getStartDate() {
         return startDate;
     }
-    public int getTrackId(){
+
+    public int getTrackId() {
         return trackId;
     }
-    public Integer getMentorId(){
+
+    public Integer getMentorId() {
         return mentorId;
     }
 }
